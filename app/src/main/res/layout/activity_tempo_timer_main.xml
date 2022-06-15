@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context="com.tempotimer.TempoTimerMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/configButton"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@android:drawable/ic_menu_manage"
+            android:contentDescription="@string/configButton" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_inverse" />
+
+            <TextView
+                android:id="@+id/textInitalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_reps"
+                android:textSize="18sp"
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvr_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tvr_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textInitialTine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/textinitaltime"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvi_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/tempoStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tvi_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_time_excecntric"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv1_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/tempo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv1_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_time_isometric"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv2_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/tempo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv2_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_time_concenctric"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv3_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/tempo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv3_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_time_rest"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv4_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/minus"
+                    android:textColor="#0D47A1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/tempo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:textSize="18sp"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tv4_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#B71C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/botonStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/start"
+                app:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/botonReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/reset"
+                app:backgroundTint="#00BCD4" />
+
+            <Button
+                android:id="@+id/botonExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/exit"
+                app:backgroundTint="#E91E25" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

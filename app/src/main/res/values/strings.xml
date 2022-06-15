@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TempoTimer</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="exit">Exit</string>
+    <string name="text0">Warm up</string>
+    <string name="text1">Go to the bar</string>
+    <string name="text2">Ready?</string>
+    <string name="text3">Excentric</string>
+    <string name="text4">Isometric</string>
+    <string name="text5">Concentric</string>
+    <string name="text6">Rest</string>
+    <string name="text7">End</string>
+    <string name="text_inverse">Inverse</string>
+    <string name="text_reps">Reps</string>
+    <string name="textinitaltime">Initial Time</string>
+    <string name="text_time_excecntric">Excentric Time</string>
+    <string name="text_time_isometric">Isometric Time</string>
+    <string name="text_time_concenctric">Concentric Time</string>
+    <string name="text_time_rest">Rest Time</string>
+    <string name="text_time_min_excentric">Minnimun Excentric Time(ms)</string>
+    <string name="text_time_min_concentric">Minnimun Concnetric Time(ms)</string>
+    <string name="text_time_min_int">Minnimun Initt Time(s)</string>
+    <string name="Ok">OK</string>
+    <string name="minTimeText">"The init time can´t be less that inital time (config) "</string>
+    <string name="configButton">Options</string>
+    <string name="castfuent_software">CastFuent Software</string>
+    <string name="tempo_timer">Tempo Timer</string>
+    <string name="logo">Logo</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="number_defect">2</string>
+
+
+</resources>

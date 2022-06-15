@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TempoTimer</string>
+    <string name="start">Inicio</string>
+    <string name="reset">Reinicio</string>
+    <string name="exit">Salir</string>
+    <string name="text0">¿Preparados?</string>
+    <string name="text1">Toma la barra</string>
+    <string name="text2">Listo?</string>
+    <string name="text3">Excentrica</string>
+    <string name="text4">Isometrica</string>
+    <string name="text5">Concentrica</string>
+    <string name="text6">Descanso</string>
+    <string name="text7">Fin</string>
+    <string name="text_inverse">Inverso</string>
+    <string name="text_reps">Reps</string>
+    <string name="textinitaltime">Tiempo Inicial</string>
+    <string name="text_time_excecntric">Tiempo Excentrica</string>
+    <string name="text_time_isometric">Tiempo Isometrica</string>
+    <string name="text_time_concenctric">Tiempo Concentrica</string>
+    <string name="text_time_rest">Tiempo Descanso</string>
+    <string name="text_time_min_excentric">Tiempo Mínimo Exentrica (ms)</string>
+    <string name="text_time_min_concentric">Tiempo Máximo Concentrica(ms)</string>
+    <string name="text_time_min_int">Tiempo Mínimo de Inicio(s)</string>
+    <string name="Ok">Aceptar</string>
+    <string name="minTimeText">"\"El tiempo de inicio no puede ser menor que el tiempo inicial(configuración) "</string>
+    <string name="configButton">Opciones</string>
+    <string name="castfuent_software">CastFuent Software</string>
+    <string name="tempo_timer">Tempo Timer</string>
+    <string name="logo">Logo</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="number_defect">2</string>
+</resources>

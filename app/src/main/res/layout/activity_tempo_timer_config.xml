@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tempotimer.TempoTimerConfig">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/configButton"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tminConcentric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_time_min_concentric"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerConc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:minHeight="50dp" />
+
+            <TextView
+                android:id="@+id/tminExcentric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_time_min_excentric"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinnerEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:minHeight="50dp" />
+
+            <TextView
+                android:id="@+id/tMinIniTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_time_min_int"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t_minusc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/minus"
+                    android:textColor="#E91E63"
+                    android:textSize="36sp" />
+
+                <EditText
+                    android:id="@+id/eTMinInut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="@string/number_defect"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tplusc"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/plus"
+                    android:textColor="#3F51B5"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bconfirreturn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Ok" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

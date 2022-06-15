@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lTimer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tempotimer.TempoTimerE">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textNumber"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:duplicateParentState="false"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#000000"
+                android:textSize="200sp" />
+
+            <TextView
+                android:id="@+id/textphase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/BotonStart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/start"
+                app:backgroundTint="#348C21" />
+
+            <Button
+                android:id="@+id/botonReset"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="@string/reset"
+                app:backgroundTint="#175281" />
+
+            <Button
+                android:id="@+id/BotonExit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0"
+                android:text="@string/exit"
+                app:backgroundTint="#9F204B" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
